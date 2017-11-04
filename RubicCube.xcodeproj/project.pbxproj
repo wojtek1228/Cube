@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2CC02281FAD10C300868612 /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = C2CC021D1FAD10C300868612 /* search.c */; };
+		C2CC02291FAD10C300868612 /* facecube.c in Sources */ = {isa = PBXBuildFile; fileRef = C2CC02201FAD10C300868612 /* facecube.c */; };
+		C2CC022A1FAD10C300868612 /* cubiecube.c in Sources */ = {isa = PBXBuildFile; fileRef = C2CC02231FAD10C300868612 /* cubiecube.c */; };
+		C2CC022B1FAD10C300868612 /* coordcube.c in Sources */ = {isa = PBXBuildFile; fileRef = C2CC02261FAD10C300868612 /* coordcube.c */; };
 		C2F0ECF81FACFB4000103D69 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2F0ECF71FACFB4000103D69 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C2CC021C1FAD10C300868612 /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		C2CC021D1FAD10C300868612 /* search.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
+		C2CC021E1FAD10C300868612 /* facelet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facelet.h; sourceTree = "<group>"; };
+		C2CC021F1FAD10C300868612 /* facecube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facecube.h; sourceTree = "<group>"; };
+		C2CC02201FAD10C300868612 /* facecube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = facecube.c; sourceTree = "<group>"; };
+		C2CC02211FAD10C300868612 /* edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edge.h; sourceTree = "<group>"; };
+		C2CC02221FAD10C300868612 /* cubiecube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubiecube.h; sourceTree = "<group>"; };
+		C2CC02231FAD10C300868612 /* cubiecube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cubiecube.c; sourceTree = "<group>"; };
+		C2CC02241FAD10C300868612 /* corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = corner.h; sourceTree = "<group>"; };
+		C2CC02251FAD10C300868612 /* coordcube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coordcube.h; sourceTree = "<group>"; };
+		C2CC02261FAD10C300868612 /* coordcube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coordcube.c; sourceTree = "<group>"; };
+		C2CC02271FAD10C300868612 /* color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
 		C2F0ECF41FACFB4000103D69 /* RubicCube */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RubicCube; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F0ECF71FACFB4000103D69 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +73,18 @@
 		C2F0ECF61FACFB4000103D69 /* RubicCube */ = {
 			isa = PBXGroup;
 			children = (
+				C2CC021C1FAD10C300868612 /* search.h */,
+				C2CC021D1FAD10C300868612 /* search.c */,
+				C2CC021E1FAD10C300868612 /* facelet.h */,
+				C2CC021F1FAD10C300868612 /* facecube.h */,
+				C2CC02201FAD10C300868612 /* facecube.c */,
+				C2CC02211FAD10C300868612 /* edge.h */,
+				C2CC02221FAD10C300868612 /* cubiecube.h */,
+				C2CC02231FAD10C300868612 /* cubiecube.c */,
+				C2CC02241FAD10C300868612 /* corner.h */,
+				C2CC02251FAD10C300868612 /* coordcube.h */,
+				C2CC02261FAD10C300868612 /* coordcube.c */,
+				C2CC02271FAD10C300868612 /* color.h */,
 				C2F0ECF71FACFB4000103D69 /* main.cpp */,
 			);
 			path = RubicCube;
@@ -120,6 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F0ECF81FACFB4000103D69 /* main.cpp in Sources */,
+				C2CC022B1FAD10C300868612 /* coordcube.c in Sources */,
+				C2CC02291FAD10C300868612 /* facecube.c in Sources */,
+				C2CC02281FAD10C300868612 /* search.c in Sources */,
+				C2CC022A1FAD10C300868612 /* cubiecube.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,14 +250,110 @@
 		C2F0ECFC1FACFB4000103D69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_photo",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_fuzzy",
+					"-lopencv_img_hash",
+					"-lopencv_line_descriptor",
+					"-lopencv_optflow",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_ml",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_video",
+					"-lopencv_ximgproc",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_flann",
+					"-lopencv_xobjdetect",
+					"-lopencv_imgcodecs",
+					"-lopencv_objdetect",
+					"-lopencv_xphoto",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		C2F0ECFD1FACFB4000103D69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_videostab",
+					"-lopencv_photo",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_fuzzy",
+					"-lopencv_img_hash",
+					"-lopencv_line_descriptor",
+					"-lopencv_optflow",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_ml",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_video",
+					"-lopencv_ximgproc",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_flann",
+					"-lopencv_xobjdetect",
+					"-lopencv_imgcodecs",
+					"-lopencv_objdetect",
+					"-lopencv_xphoto",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
@@ -248,6 +376,7 @@
 				C2F0ECFD1FACFB4000103D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
